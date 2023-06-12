@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="wizard-32.ico" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style2.css" />
+        <title>Little Wizard</title>
+        <script src="models/drawable-object.class.js"></script>
+        <script src="models/movable-object.class.js"></script>
+        <script src="models/character.class.js"></script>
+        <script src="models/snake2.class.js"></script>
+        <script src="models/mosquito.class.js"></script>
+        <script src="models/endbossOnFire.js"></script>
+        <script src="models/snake.class.js"></script>
+        <script src="models/spyder.class.js"></script>
+        <script src="models/pepe.class.js"></script>
+        <script src="models/lavafire.class.js"></script>
+        <script src="models/lavafire2.class.js"></script>
+        <script src="models/lavafire3.class.js"></script>
+        <script src="models/lavafire4.class.js"></script>
+        <script src="models/lavafire5.class.js"></script>
+        <script src="models/lavafire6.class.js"></script>
+        <script src="models/lavafire7.class.js"></script>
+        <script src="models/lavafire8.class.js"></script>
+        <script src="models/torch1.class.js"></script>
+        <script src="models/mimik1.class.js"></script>
+        <script src="models/torch3.class.js"></script>
+        <script src="models/cloud.class.js"></script>
+        <script src="models/cloudSecretRoom.class.js"></script>
+        <script src="models/birds.class.js"></script>
+        <script src="models/status-bar.class.js"></script>
+        <script src="models/status-bar-coins.class.js"></script>
+        <script src="models/status-bar-endboss.class.js"></script>
+        <script src="models/status-bar-bottle.js"></script>
+        <script src="models/background-objekt.class.js"></script>
+        <script src="models/keyboard.class.js"></script>
+        <script src="models/grass.class.js"></script>
+        <script src="models/secretStone1.class.js"></script>
+        <script src="models/endbossStone1.js"></script>
+        <script src="models/endbossStoneALL.js"></script>
+        <script src="models/endbossStoneL1.js"></script>
+        <script src="models/endbossStoneUP.js"></script>
+        <script src="models/endbossTrap.js"></script>
+        <script src="models/endbossStoneR1.js"></script>
+        <script src="models/tree1.class.js"></script>
+        <script src="models/rock1.class.js"></script>
+        <script src="models/shield1.class.js"></script>
+        <script src="models/grass2.class.js"></script>
+        <script src="models/bridge1.class.js"></script>
+        <script src="models/bridge2.class.js"></script>
+        <script src="models/stone1.class.js"></script>
+        <script src="models/stone11.class.js"></script>
+        <script src="models/stone111.class.js"></script>
+        <script src="models/stone2.class.js"></script>
+        <script src="models/water1.class.js"></script>
+        <script src="models/bridge3.class.js"></script>
+        <script src="models/level.class.js"></script>
+        <script src="models/throwable-objekt.class.js"></script>
+        <script src="models/throwable-objekt-fire.class.js"></script>
+        <script src="models/coin.class.js"></script>
+        <script src="models/bottle.class.js"></script>
+        <script src="models/bottle2.class.js"></script>
+        <script src="models/endboss.class.js"></script>
+        <script src="models/endScreen.class.js"></script>
+        <script src="models/winScreen.class.js"></script>
+        <script src="models/world.class.js"></script>
+        <script src="levels/level1.js"></script>
+        <script src="js/game.js"></script>
+    </head>
+    <body onload="init()">
+        <audio id="myAudio" src="audio/winning-elevation-111355.mp3" autoplay loop></audio>
+        <div class="canvas_root">
+            <div class="setting_buttons">
+                <button onclick="repeat()">
+                    <img src="img/10_UI/UI_1/repeat-32.png" width="25px" height="25px" />
+                </button>
+                <button onclick="settings()">
+                    <img src="img/10_UI/UI_1/settings-13-32.png" width="25px" height="25px" />
+                </button>
+                <button onclick="home()">
+                    <img src="img/10_UI/UI_1/home-5-32.png" width="25px" height="25px" />
+                </button>
+                <button onclick="playAudio()">
+                    <img src="img/10_UI/UI_1/audio-add-32.png" width="25px" height="25px" />
+                </button>
+                <button onclick="pauseAudio()">
+                    <img src="img/10_UI/UI_1/audio-remove-32.png" width="25px" height="25px" />
+                </button>
+                <button onclick="toggleFullscreen()">
+                    <img src="img/10_UI/UI_1/fit-to-width.png" width="25px" height="25px" />
+                </button>
+            </div>
+
+            <canvas id="canvas" width="720" height="480"></canvas>
+
+            <div class="setting_buttons2">
+                <button>
+                    <img src="img/10_UI/UI_1/arrowLeft.png" id="btnLeft" width="32px" height="32px" />
+                </button>
+
+                <button>
+                    <img src="img/10_UI/UI_1/arrowRight.png" id="btnRight" width="32px" height="32px" />
+                </button>
+                <button>
+                    <img src="img/10_UI/UI_1/arrowUp.png" id="btnUp" width="32px" height="32px" />
+                </button>
+                <button>
+                    <img src="img/6_salsa_bottle/1_0003_Bottle4.png" id="btnFire" width="32px" height="32px" />
+                </button>
+                <button>
+                    <img src="img/0_endboss/tesla_ball/tesla_ball13.png" id="btnFire2" width="80px" height="60px" />
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+mimik
+snake
+
+lavafire.classen  kürzen 
+
+In einem fernen Land lebte ein mutiger Zauberer namens Little Wizard, der für seine außergewöhnlichen Kräfte bekannt war. Eines Tages wurde sein bester Freund Pepe von einem gefährlichen Monster entführt, das in den schroffen Bergen hauste. Trotz der schwindelerregenden Höhen und der tödlichen Klippen nahm Little Wizard die Herausforderung an, um seinen Freund zu retten.
+
+Auf seinem Weg begegnete er vielen Gefahren, darunter reißende Flüsse und wilde Kreaturen, doch seine Entschlossenheit ließ nicht nach. In einem verlassenen Tempel fand Little Wizard schließlich den sagenumwobenen Key, von dem er gehört hatte, dass er den Endboss besiegen konnte. Die Reise ging weiter, und bald stand er dem furchteinflößenden Monster gegenüber, das Pepe gefangen hielt.
+
+Mit geschickten Zaubersprüchen und der Kraft des Keys gelang es Little Wizard, das Monster zu bezwingen. Erschöpft, aber glücklich, befreite er seinen Freund Pepe aus den Fängen der Bestie. Gemeinsam kehrten sie in ihr Dorf zurück, wo sie als Helden gefeiert wurden. Und so ging die Geschichte von Little Wizard und Pepe, den unzertrennlichen Freunden, die selbst die gefährlichsten Abenteuer bestanden, in die Legenden ein.
+
+
+  /* drawFrame(ctx) {
+    if (
+      this instanceof Character ||
+      this instanceof Goblin ||
+      this instanceof Endboss ||
+      this instanceof Mosquito ||
+      this instanceof EndbossOnFire ||
+      this instanceof Snake ||
+      this instanceof Spyder ||
+      this instanceof Torch1 ||
+      this instanceof Mimik1 ||
+      this instanceof Bottle2 ||
+    
+      this instanceof LavaFire ||
+      this instanceof LavaFire2 ||
+      this instanceof LavaFire3 ||
+      this instanceof LavaFire4 ||
+      this instanceof LavaFire5 ||
+      this instanceof LavaFire6 ||
+      this instanceof LavaFire7 ||
+      this instanceof Coin
+    ) {
+      ctx.beginPath();
+      ctx.rect(
+        this.x + this.hitboxOffsetX,
+        this.y + this.hitboxOffsetY,
+        this.hitboxWidth,
+        this.hitboxHeight
+      );
+      ctx.lineWidth = 1;
+      ctx.strokeStyle = "blue";
+      ctx.stroke();
+    }
+  } */

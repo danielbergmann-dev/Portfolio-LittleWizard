@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  color: rgb(0, 0, 0);
+  flex-direction: column;
+  font-family: "zabras", sans-serif;
+  align-items: center;
+  background-image: url(img/5_background/mountains3.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 24px;
+}
+@font-face {
+  font-family: "zabras";
+  src: url("fonts/SHPinscher-Regular.otf") format("truetype");
+
+}
+
+
+.settings {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(29, 29, 29, 0.384);
+  width: 720px;
+  height: 480px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.644);
+  border: none;
+  position: relative;
+}
+
+.btnExit {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+table , td, th {
+	border: none;
+	border-collapse: collapse;
+}
+
+td, th {
+	padding: 3px;
+	width: 30px;
+	height: 25px;
+}
+th {
+	background: #f0e6cc;
+}
+.even {
+	background: #fbf8f0;
+}
+.odd {
+	background: #fefcf9;
+}
+
+.canvas_root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+canvas {
+  display: block;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.644);
+}
+
+#fullscreen-off {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+  /* z-index: 99; */
+}
+
+.setting_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  max-height: 32px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  gap: 8px;
+  border: none;
+}
+
+.setting_buttons2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  max-height: 32px;
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  gap: 30%;
+  border: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+
+}
+
+.back {
+  
+  text-align: center;
+  vertical-align: middle;
+  color: #ebebeb;
+}
+
+.panel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  max-height: 32px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  gap: 8px;
+}
+
+#btnFire2 {
+  display: none;
+}
+
+
+.button_start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 2rem;
+}
+
+.img_UI {
+  cursor: pointer;
+}
+
+.ui_left {
+  display: block;
+}
+
+.ui_back {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.397);
+  z-index: 1;
+}
+
+/* Smartphones width*/
+
+@media only screen and (max-width: 720px) {
+  canvas {
+    width: 100%;
+  }
+}
+
+/* Smartphones height*/
+@media only screen and (max-height: 480px) {
+  canvas {
+    height: 100vh;
+  }
+}

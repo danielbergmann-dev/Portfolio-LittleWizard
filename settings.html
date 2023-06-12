@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="wizard-32.ico" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style2.css" />
+        <title>Little Wizard</title>
+
+        <script src="js/game.js"></script>
+    </head>
+    <body onload="init()">
+        <!-- <audio id="myAudio" src="audio/winning-elevation-111355.mp3" autoplay loop></audio> -->
+        <div class="canvas_root">
+            <div class="settings">
+                <div class="btnExit">
+                    <img src="img/10_UI/UI_1/back.png" onclick="repeat()" />
+                </div>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td class="back">Werfen<img src="img/10_UI/UI_1/settings_attack.gif" alt="" width="70px" height="128px" /> SPACE </td>
+                        <td></td>
+                        <td class="back">Springen<img src="img/10_UI/UI_1/settings_jump.gif" alt="" width="70px" height="128px" /> <img src="img/10_UI/UI_1/arrowUp.png" alt="" width="32px" height="32px" /></td>
+                        <td></td>
+                        <td class="back">Links<img src="img/10_UI/UI_1/settings_walk_left.gif" alt="" width="70px" height="128px" /> <img src="img/10_UI/UI_1/arrowLeft.png" width="32px" height="32px" /></td>
+                        <td></td>
+                        <td class="back">Rechts<img src="img/10_UI/UI_1/settings_jump.gif" alt="" width="70px" height="128px" /> <img src="img/10_UI/UI_1/arrowRight.png" alt="" width="32px" height="32px" /></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="setting_buttons">
+                <button onclick="repeat()">
+                    <img src="img/10_UI/UI_1/repeat-32.png" width="25px" height="25px" />
+                </button>
+                <button onclick="settings()">
+                    <img src="img/10_UI/UI_1/settings-13-32.png" width="25px" height="25px" />
+                </button>
+                <button onclick="home()">
+                    <img src="img/10_UI/UI_1/home-5-32.png" width="25px" height="25px" />
+                </button>
+                <button onclick="playAudio()">
+                    <img src="img/10_UI/UI_1/audio-add-32.png" width="25px" height="25px" />
+                </button>
+                <button onclick="pauseAudio()">
+                    <img src="img/10_UI/UI_1/audio-remove-32.png" width="25px" height="25px" />
+                </button>
+                <button onclick="toggleFullscreen()">
+                    <img src="img/10_UI/UI_1/fit-to-width.png" width="25px" height="25px" />
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

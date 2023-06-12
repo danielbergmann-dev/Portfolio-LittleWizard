@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  color: rgb(41, 0, 46);
+  flex-direction: column;
+  font-family: "zabras", sans-serif;
+  align-items: center;
+  background-image: url(img/5_background/mountains3.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 99;
+
+}
+
+canvas {
+  visibility: hidden;
+  background-color: black;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.644);
+}
+
+@font-face {
+  font-family: "zabras";
+  src: url("fonts/SHPinscher-Regular.otf") format("truetype");
+
+}
+
+h1 {
+  font-size: 74px;
+  letter-spacing: 6px;
+  background: linear-gradient(
+    to right,
+    rgb(241, 158, 3),
+    rgb(204, 0, 255),
+    blue
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.644) 4px 4px 4px 4px;
+}
+
+.canvasRoot {
+  display: flex;
+  justify-content: center;
+  max-width: 720px;
+  max-height: 480px;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Diese Zeile hinzugefügt */
+}
+p {
+  text-align: center;
+}
+
+.canvasRootChild1 {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Diese Zeile hinzugefügt */
+  animation: marquee 50s linear infinite;
+  font-size: 35px;
+}
+
+.marquee span {
+width: 100%;
+  height: 100%;
+}
+
+/* .marquee span {
+  font-size: 35px;
+  text-align: center;
+  color: rgb(10, 13, 56);
+  animation: marquee 2800s linear infinite;
+} */
+
+.button_start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.img_UI {
+  cursor: pointer;
+  border: none;
+}
+
+.ui_left {
+  display: block;
+  border: none;
+}
+
+.ui_back {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgba(0, 0, 0, 0.397);
+  z-index: 1;
+  min-width: 72vw;
+  border: none;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateY(60%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 54px;
+}
+
+span {
+  font-size: 25px;
+}
+}
+@media only screen and (max-height: 600px) {
+  h1 {
+    font-size: 54px;
+}
+
+span {
+  font-size: 25px;
+}
+}
+
